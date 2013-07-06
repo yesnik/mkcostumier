@@ -1,3 +1,5 @@
+# -*- coding:utf-8 -*-
+
 """
 Django settings for mkcostumier project.
 
@@ -36,6 +38,13 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'page',
+    # Стороннее приложение sorl для генерации маленьких изображений
+    'sorl.thumbnail',
+
+    # Стороннее приложение django-attachments для загрузки файлов, фотографий
+    'attachments',
 )
 
 MIDDLEWARE_CLASSES = (

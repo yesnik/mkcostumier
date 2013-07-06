@@ -2,25 +2,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <head>
     <title>Главная | MK-Costumier: Костюмы для танца живота</title>
-    
-	<link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css" media="screen"/>
+
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css" media="screen"/>
     <link href="images/favicon.ico" rel="shortcut icon"/>
     <!--[if lt IE 8]><link rel="stylesheet" href="{{ STATIC_URL }}css/ie.css" type="text/css" media="screen, projection"/><![endif]-->
 </head>
 <body>
 <!-- Container -->
 <div id="container">
-	
+
     <!-- Header -->
-	<div id="header">
+    <div id="header">
         <img alt="" src="{{ STATIC_URL }}images/header-girl.jpg"/>
         <img alt="Логотип MK-Costumier" src="{{ STATIC_URL }}images/header-logo.jpg"/>
-	</div><!-- /Header -->
-    
+    </div><!-- /Header -->
+
     <!-- Menu -->
     <div id="menu">
-    	<ul>
-        	<li><a href="uslugi.html">Услуги</a></li>
+        <ul>
+            <li><a href="uslugi.html">Услуги</a></li>
             <li><a href="gallery.html">Галерея</a></li>
             <li><a href="exclusive.html">Эксклюзив</a></li>
             <li><a href="doska-pocheta.html">Доска почета</a></li>
@@ -28,116 +28,120 @@
             <li><a href="oplata-i-dostavka.html">Оплата и доставка</a></li>
         </ul>
     </div><!-- /Menu -->
-    
+
     <!-- Content -->
     <div id="content">
-    	
+
         <!-- Left-column -->
-    	<div id="left-col">
-        
-        	<h1>Добро пожаловать</h1>
-            
+        <div id="left-col">
+
+            {% block content %}
+
+            <h1>Добро пожаловать</h1>
+
             <p>Меня зовут Марина Клевакина. Я являюсь дизайнером одежды. Вашему вниманию хочу представить ряд своих творений в восточном стиле.</p>
             <p>Костюмы безусловно будут интересны тем, кто увлекается или занимается профессионально танцем живота в восточном стиле.</p>
             <p>Вы можете арендовать костюм, имеющийся в моей коллекции, купить или заказать новый. Индивидуальный подход, соблюдение сроков, справедливая цена&nbsp;&mdash; гарантированы.</p>
-            
+
             <h1>Галерея</h1>
-            
+
             <!-- Gal-present -->
             <div id="gal-present">
-            <h2 class="gal-name">&mdash; настоящее</h2>
-            <p>Здесь расположены имеющиеся в наличии костюмы, которые можно купить.</p>
-            	
+                <h2 class="gal-name">&mdash; настоящее</h2>
+                <p>Здесь расположены имеющиеся в наличии костюмы, которые можно купить.</p>
+
                 <!-- Item -->
                 <div id="item-wrap">
-                	<div id="item-left">
+                    <div id="item-left">
                         <a href="gallery.html"><img alt="" src="{{ STATIC_URL }}images/02-1.jpg"/></a>
                         <p class="price">6 000 руб</p>
                     </div>
                 </div><!-- /Item -->
-                
+
                 <!-- Item -->
                 <div id="item-wrap">
-                	<div id="item-left">
+                    <div id="item-left">
                         <a href="gallery.html"><img alt="" src="{{ STATIC_URL }}images/hrustalnaya-pautina-1.jpg"/></a>
                         <p class="price">6 500 руб</p>
                     </div>
                 </div><!-- /Item -->
-                
-     			<!-- Item -->
+
+                <!-- Item -->
                 <div id="item-wrap">
-                	<div id="item-left">
+                    <div id="item-left">
                         <a href="gallery.html"><img alt=&quot;&quot; src="{{ STATIC_URL }}images/sumerki-1.jpg"/></a>
                         <p class="price">6 500 руб</p>
                     </div>
                 </div><!-- /Item -->
-                
+
                 <!-- Item -->
                 <div id="item-wrap">
-                	<div id="item-left">
+                    <div id="item-left">
                         <a href="gallery.html"><img alt="Осеннее солнце" src="{{ STATIC_URL }}images/osennee-solnce-01.jpg"/></a>
                         <p class="price">11 000 руб</p>
                     </div>
                 </div><!-- /Item -->
-                 
+
             </div><!-- /Gal-present -->
-        	
+
             <!-- Gal-past -->
             <div id="gal-past">
                 <h2 class="gal-name">&mdash; прошлое</h2>
                 <p>Здесь расположены созданные мною костюмы, которые уже нашли своего обладателя. Возможно, среди них найдется интересная модель, которую вы сможете заказать для изготовления.</p>
-                
+
                 <!-- Item -->
                 <div id="item-wrap">
-                        <div id="item-left">
-                            <a href="gallery.html"><img alt="Малиновый щербет" src="{{ STATIC_URL }}images/dzhins-01.jpg"/></a>
-                            <a href="gallery.html"><img alt="Осеннее солнце" src="{{ STATIC_URL }}images/eldeveis-01.jpg"/></a>
-                            <a href="gallery.html"><img alt="Осеннее солнце" src="{{ STATIC_URL }}images/golubaya-laguna-01.jpg"/></a>
-                            <a href="gallery.html"><img alt="Осеннее солнце" src="{{ STATIC_URL }}images/iz-peny-morskoj-01.jpg"/></a>
-                            <a href="gallery.html"><img alt="Осеннее солнце" src="{{ STATIC_URL }}images/izumrudnyj-bereg-1-01.jpg"/></a>
-                        </div>
+                    <div id="item-left">
+                        <a href="gallery.html"><img alt="Малиновый щербет" src="{{ STATIC_URL }}images/dzhins-01.jpg"/></a>
+                        <a href="gallery.html"><img alt="Осеннее солнце" src="{{ STATIC_URL }}images/eldeveis-01.jpg"/></a>
+                        <a href="gallery.html"><img alt="Осеннее солнце" src="{{ STATIC_URL }}images/golubaya-laguna-01.jpg"/></a>
+                        <a href="gallery.html"><img alt="Осеннее солнце" src="{{ STATIC_URL }}images/iz-peny-morskoj-01.jpg"/></a>
+                        <a href="gallery.html"><img alt="Осеннее солнце" src="{{ STATIC_URL }}images/izumrudnyj-bereg-1-01.jpg"/></a>
+                    </div>
                 </div><!-- /Item -->
-                
+
             </div><!-- /Gal-past -->
-            
+
             <!-- Gal-future -->
             <div id="gal-future">
-            <h2 class="gal-name">&mdash; будущее</h2>
-            <p>Содержание данного раздела зависит исключительно от ваших пожеланий. Для вас я могу сделать костюм для танцев живота любой сложности.</p>
-            
-     			<!-- Item-wrap -->
+                <h2 class="gal-name">&mdash; будущее</h2>
+                <p>Содержание данного раздела зависит исключительно от ваших пожеланий. Для вас я могу сделать костюм для танцев живота любой сложности.</p>
+
+                <!-- Item-wrap -->
                 <div id="item-wrap">
-                	<div id="item-left">
+                    <div id="item-left">
                         <a href="contacts.html"><img alt="Заполнить заявку" src="{{ STATIC_URL }}images/item-girl.jpg"/></a>
                     </div>
-                    
-              <div id="item-right-future">
+
+                    <div id="item-right-future">
                         <p>Заполните заявку на ваш будущий костюм для танцев живота прямо сейчас!</p>
-                        
+
                         <div id="btn-zayavka">
                             <a href="contacts.html">Заполнить заявку</a>
                         </div>
- 
-                  </div>
-                    
-              </div><!-- /Item-wrap -->
-        </div><!-- /Gal-future -->
-        
-    </div><!-- /Left-column -->
-    
-</div><!-- /Content -->
-	<div class="clear margin-bottom-20"></div>
-	<div id="footer">
-    	<p>&copy; 2011-2012 MK-Costumier: Клевакина Марина</p>
+
+                    </div>
+
+                </div><!-- /Item-wrap -->
+            </div><!-- /Gal-future -->
+
+            {% endblock %}
+
+        </div><!-- /Left-column -->
+
+    </div><!-- /Content -->
+    <div class="clear margin-bottom-20"></div>
+    <div id="footer">
+        <p>&copy; 2011-2012 MK-Costumier: Клевакина Марина</p>
     </div>
-    
+
 </div><!-- /Container -->
 <!-- Yandex.Metrika counter -->
 <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
 <script type="text/javascript">
-try { var yaCounter4532623 = new Ya.Metrika({id:4532623,
-          clickmap:true, webvisor:true});}
-catch(e) { }
+    try { var yaCounter4532623 = new Ya.Metrika({id:4532623,
+        clickmap:true, webvisor:true});}
+    catch(e) { }
 </script>
 <noscript><div><img src="//mc.yandex.ru/watch/4532623" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->

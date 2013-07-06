@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 from django.conf.urls import patterns, include, url
 from mkcostumier import settings
+from page.views import PageView
 
 from django.contrib import admin
 admin.autodiscover()
@@ -12,6 +13,7 @@ urlpatterns = patterns('',
 
 
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^(?P<slug>\w+)/$', PageView.as_view(), name='page_detail'),
     url(r'', include('main.urls')),
 )
 
