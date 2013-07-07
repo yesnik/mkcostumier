@@ -6,6 +6,29 @@
     <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css" media="screen"/>
     <link href="images/favicon.ico" rel="shortcut icon"/>
     <!--[if lt IE 8]><link rel="stylesheet" href="{{ STATIC_URL }}css/ie.css" type="text/css" media="screen, projection"/><![endif]-->
+    <script src="{{STATIC_URL}}js/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <!-- Fancybox -->
+    <script type="text/javascript" src="{{STATIC_URL}}js/fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}js/fancybox/jquery.fancybox.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}js/fancybox/jquery.fancybox.css?v=2.1.2" media="screen" />
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+        //Fancybox
+        $("a[rel=gallery]").fancybox({
+        'overlayColor' : '#666',
+        'overlayOpacity': 0.5,
+        'speedIn' : 600,
+        'speedOut' : 200,
+        'changeFade' : 'medium',
+        'transitionIn' : 'elastic',
+        'transitionOut' : 'elastic'
+        });
+      });
+    </script>
+    <!-- End Fancybox -->
 </head>
 <body>
 <!-- Container -->

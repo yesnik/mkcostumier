@@ -1,0 +1,37 @@
+﻿{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Галерея</h1>
+
+    <h2 class="gal-name">&ndash; настоящее</h2>
+    <p>В этом разделе вы можете ознакомиться с работами, которые можно купить.</p>
+
+    {% load attachments_tags %}
+    {% load thumbnail %}
+
+    {% for costume in costume_list %}
+        <div class="img-container">
+            <h2 class="item-name">{{ costume.title }}</h2>
+
+            {% get_attachments_for costume as "attachments_list" %}
+
+            {% for attachment in attachments_list %}
+                <div class="pic">
+                    <a href="{{ attachment.attachment_file.url }}" rel="gallery" alt="{{ attachment.filename }}">
+                        {% thumbnail attachment.attachment_file "100x150" crop="center" as im %}
+                            <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}" alt="">
+                        {% endthumbnail %}
+                    </a>
+                </div>
+
+
+            {% endfor %}
+
+
+            <div class="clear"></div>
+            <p class="price">{{ costume.price }} руб.</p>
+        </div>
+    {% endfor %}
+
+{% endblock %}
+
