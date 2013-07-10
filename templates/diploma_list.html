@@ -1,0 +1,21 @@
+﻿{% extends 'base.html' %}
+
+{% load thumbnail %}
+
+{% block content %}
+
+    <h1>Доска почета</h1>
+
+    <div id="img-container-big">
+        {% for diploma in diploma_list %}
+            <div class="pic">
+                <a href="/media/{{ diploma.photo }}" rel="gallery" alt="{{ diploma.title }}">
+                    {% thumbnail diploma.photo "100x150" crop="center" as im %}
+                        <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}" alt="">
+                    {% endthumbnail %}
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

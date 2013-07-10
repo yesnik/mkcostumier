@@ -3,6 +3,7 @@ from django.conf.urls import patterns, include, url
 from mkcostumier import settings
 from page.views import PageView
 from costume.views import GalleryView
+from diploma.views import DiplomaView
 
 from django.contrib import admin
 admin.autodiscover()
@@ -15,6 +16,7 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^gallery/$', GalleryView.as_view(), name='gallery_page'),
+    url(r'^doska_pocheta/$', DiplomaView.as_view(), name='diploma_page'),
     url(r'^(?P<slug>\w+)/$', PageView.as_view(), name='page_detail'),
     url(r'', include('main.urls')),
 )

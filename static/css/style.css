@@ -1,8 +1,5 @@
-﻿/*а?аИаЗаАаЙаН, аВаЕб?б?б?аКаА: а?аИаКаИб?аА а?б?б?аИаН
-  а?аАаКаАаЗб?аИаК: а?аАб?аИаНаА а?аЛаЕаВаАаКаИаНаА
-  а?аАб?аА: 20.02.2011*/
-  
-/* аЁаБб?аОб? CSS */
+﻿/* Design, coding, programming by Nikita Nyatin
+   Release date: 20.02.2011 */
 
 * { 
 	margin: 0; 
@@ -11,8 +8,6 @@
 img { border:none;}
 table { border-collapse: collapse; width: 100%; }
 table th, table td { vertical-align: top; }
-
-/* Cб?аИаЛаИ аОб?аНаОаВаНб?б? б?аЕаГаОаВ */
 
 body{ 
 	font:12px Arial, Helvetica, sans-serif; 
@@ -45,8 +40,6 @@ a:hover {
 	text-decoration:none !important;
 	}
 ul{ list-style:none;}
-	
-/* а?аАб?б?б?аОаЙаКаИ аКаОаНб?аЕаЙаНаЕб?аА */
 
 #container{
 	width:800px;
@@ -59,8 +52,6 @@ ul{ list-style:none;}
 #header img{
 	float:left;
 	}
-	
-	/* а?аЕаНб? */
 	
 #menu{
 	float:left;
@@ -80,14 +71,12 @@ ul{ list-style:none;}
 	padding:8px 11px 0 12px;
 	}
 
-/* а?аОаНб?аЕаНб? */	
-
 #content{
 	clear:both;
 	padding: 10px 30px;
 	}
 
-/* а?аЕаВаАб? аКаОаЛаОаНаКаА */	
+
 #left-col{
 	width:100%;
 	}
@@ -113,8 +102,6 @@ ul{ list-style:none;}
 	padding: 0 0 10px 0;
 	}
 	
-	/* а?аАаЛаЕб?аЕб? "а?аАб?б?аОб?б?аЕаЕ" */
-	
 #gal-present h2, #gal-past h2, #gal-future h2{
 	padding:10px 0 8px 16px;
 	text-align:left;
@@ -126,8 +113,7 @@ ul{ list-style:none;}
 #item-wrap{
 	padding:0px 0 0 35px;
 	}
-	
-	/* а?аАаЛаЕб?аЕб? "а?б?аОб?аЛаОаЕ" */
+
 	
 #gal-past, #gal-future{
 	clear:both;
@@ -135,8 +121,7 @@ ul{ list-style:none;}
 #gal-future{
 	clear: both;
 	}
-	
-	/* а?аЕаВб?аЙ б?аЛаЕаМаЕаНб?, б?аОаДаЕб?аЖаАб?аИаЙ б?аОб?аО */
+
 #item-left{
 	float:left;
 	}
@@ -146,8 +131,7 @@ ul{ list-style:none;}
 	margin: 5px;
 	border: 1px solid #666;
 	}
-	
-	/* а?б?аАаВб?аЙ б?аЛаЕаМаЕаНб?, б?аОаДаЕб?аЖаАб?аИаЙ аОаПаИб?аАаНаИаЕ */
+
 #item-right{
 	width:140px;
 	float:left;
@@ -159,8 +143,7 @@ ul{ list-style:none;}
 #item-right p{
 	padding:5px 10px 10px 13px;
 	}
-	
-	/* аЁб?б?аЛаКаА "а?б?аЕ аКаОб?б?б?аМб?..." */
+
 #more_costumes{
 	width:110px;
 	float:right;
@@ -173,8 +156,7 @@ ul{ list-style:none;}
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-style:italic;
 	}
-	
-	/* а?б?аАаВб?аЙ б?аЛаЕаМаЕаНб? */
+
 #item-right-future{
 	width:500px;
 	float:left;
@@ -186,8 +168,6 @@ ul{ list-style:none;}
 	text-align:center;
 	padding:10px 50px;
 	}
-	
-	/* а?аНаОаПаКаА "а?аАаПаОаЛаНаИб?б? аЗаАб?аВаКб?" */
 
 #btn-zayavka{
 	height:41px;
@@ -208,7 +188,6 @@ ul{ list-style:none;}
 	color:#FC0;
 	}
 
-/* а?б?аАаВаАб? аКаОаЛаОаНаКаА */
 
 #right-col{
 	width:259px;
@@ -229,7 +208,7 @@ ul{ list-style:none;}
 	padding:0 20px 16px 20px;
 	}
 
-/* аЄб?б?аЕб? */
+
 #footer{
 	height:46px;
 	width:800px;
@@ -252,9 +231,8 @@ form{
 	float:left !important;
 	}
 
-/* аЁб?аИаЛаИ */
 
-.active{
+.active a{
 	color:#FDA92B;
 	}
 .clear{
@@ -297,9 +275,6 @@ form{
 .strong{
 	font-weight:bold;
 	}
-
-	/* а?аОаНб?аЕаЙаНаЕб? аДаЛб? аИаЗаОаБб?аАаЖаЕаНаИаЙ */
-	
 .img-container{
 	display: block;
 	width:235px;
