@@ -1,0 +1,27 @@
+﻿{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Эксклюзив</h1>
+
+    <p>В этом разделе вы можете ознакомиться с работами, выполненными мною для различных заказчиков.</p>
+
+    {% load attachments_tags %}
+
+    {% load costume_extras %}
+
+    {% for costume in costume_list %}
+        <div class="img-container">
+            <h2 class="item-name">{{ costume.title }}</h2>
+
+            {% get_attachments_for costume as "attachments_list" %}
+
+            {% for attachment in attachments_list %}
+                {% show_thumbnail attachment %}
+            {% endfor %}
+
+            <div class="clear"></div>
+        </div>
+    {% endfor %}
+
+{% endblock %}
+

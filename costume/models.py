@@ -6,6 +6,7 @@ from django.db import models
 PLACE_CHOICES = (
     ('past', u'Прошлое'),
     ('present', u'Настоящее'),
+    ('exclusive', u'Эксклюзив'),
 )
 
 

@@ -21,3 +21,15 @@ class GalleryView(ListView):
         context['past_list'] = costumes.filter(category='past')
         context['present_list'] = costumes.filter(category='present')
         return context
+
+
+class ExclusiveView(ListView):
+    """
+    Представление страницы Эксклюзив
+    """
+    template_name = 'exclusive.html'
+    context_object_name = 'costume_list'
+    model = Costume
+
+    def get_queryset(self):
+        return Costume.objects.filter(category='exclusive')
