@@ -43,6 +43,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # Стороннее приложение для генерации главного меню
+    'menu',
 
     # Стороннее приложение sorl для генерации маленьких изображений
     'sorl.thumbnail',
@@ -102,8 +104,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.contrib.messages.context_processors.messages",
 
     "django.core.context_processors.request",
-
-
 )
 
 

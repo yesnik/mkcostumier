@@ -43,12 +43,16 @@
     <!-- Menu -->
     <div id="menu">
         <ul>
-            <li><a href="uslugi.html">Услуги</a></li>
-            <li><a href="gallery.html">Галерея</a></li>
-            <li><a href="exclusive.html">Эксклюзив</a></li>
-            <li><a href="doska-pocheta.html">Доска почета</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-            <li><a href="oplata-i-dostavka.html">Оплата и доставка</a></li>
+            {% block menu %}
+
+                {% load menubuilder %}
+                {% menu main_menu %}
+                {% for item in menuitems %}
+                    <li {% if item.current %}class="active"{% endif %}>
+                        <a href="{{ item.url }}" title="{{ item.title|escape }}">{{ item.title }}</a>
+                    </li>
+                {% endfor %}
+            {% endblock %}
         </ul>
     </div><!-- /Menu -->
 
