@@ -9,4 +9,4 @@ def show_thumbnail(object):
     """
     Показать фото костюма
     """
-    return {'attachment': object}
+    return {'attachment': object, 'hi': 'Hello'}

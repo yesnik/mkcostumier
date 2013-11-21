@@ -1,0 +1,9 @@
+{% load thumbnail %}
+
+<div class="pic">
+    <a href="{{ attachment.attachment_file.url }}" rel="gallery" alt="">
+        {% thumbnail attachment.attachment_file "100x150" crop="center" as im %}
+            <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}" alt="">
+        {% endthumbnail %}
+    </a>
+</div>

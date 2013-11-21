@@ -8,6 +8,7 @@
 
     <div id="img-container-big">
         {% for diploma in diploma_list %}
+
             <div class="pic">
                 <a href="/media/{{ diploma.photo }}" rel="gallery" alt="{{ diploma.title }}">
                     {% thumbnail diploma.photo "100x150" crop="center" as im %}

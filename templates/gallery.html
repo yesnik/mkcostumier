@@ -35,9 +35,11 @@
 
             {% get_attachments_for costume as "attachments_list" %}
 
-            {% for attachment in attachments_list %}
-                {% show_thumbnail attachment %}
-            {% endfor %}
+            {% if attachments_list %}
+                {% for attachment in attachments_list %}
+                    {% show_thumbnail attachment %}
+                {% endfor %}
+            {% endif %}
 
             <div class="clear"></div>
             <p class="price">{{ costume.price }} руб.</p>

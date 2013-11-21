@@ -33,10 +33,6 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = (
 
-    'page',
-    'costume',
-    'diploma',
-
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,14 +40,14 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # Стороннее приложение для генерации главного меню
+    'page',
+    'costume',
+    'diploma',
+
     'menu',
-
-    # Стороннее приложение sorl для генерации маленьких изображений
     'sorl.thumbnail',
-
-    # Стороннее приложение django-attachments для загрузки файлов, фотографий
     'attachments',
+    #'debug_toolbar',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -92,7 +88,7 @@ USE_L10N = True
 USE_TZ = True
 
 TEMPLATE_DIRS = (
-    'templates',
+    os.path.join(BASE_DIR, 'templates'),
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -123,7 +119,7 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    'static',
+    os.path.join(BASE_DIR, 'static'),
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -137,3 +133,5 @@ MEDIA_ROOT = 'media/'
 # trailing slash.
 # Examples: "http://example.com/media/", "http://media.example.com/"
 MEDIA_URL = '/media/'
+
+THUMBNAIL_DEBUG = True
